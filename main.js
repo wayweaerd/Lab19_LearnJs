@@ -190,11 +190,45 @@ for (let i =0; i< numbers2.length; I++){
 for (let value of numbers2) {
     console.log(value);
 }
-let (let value of numbers2) {
-    console.log(value);
-}
 let mixedArray = [1,"text",true,3.14];
 console.log(mixedArray);
 console.log(numbersArr.includes(1));
 console.log(numbersArr.includes(2));
+console.log(fruits.includes("яблоко"));
+console.log(fruits.includes("манго"));
 
+let user2 = {
+    name: "Ivan",
+    age: 20,
+    isStudent: true,
+};
+console.log(user2);
+
+console.log(user2.name);
+console.log(user2.age);
+console.log(user2["name"]);
+
+//практическое задание 2
+let car = {
+    brand: "Toyota",
+    year: 2022,
+    getInfo: function() {
+        console.log(`Автомобиль: ${this.brand}, год выпуска: ${this.year}`);
+    }
+};
+car.getInfo();
+//практическое задание 3
+let product = {
+    name: "Ноутбук",
+    price: 50000,
+    category: "Электроника",
+    inStock: true
+};
+
+product.rating = 4.8;
+product.brand = "Lenovo";
+
+console.log("Свойства объекта product:");
+for (let key in product) {
+    console.log(`${key}: ${product[key]}`);
+}
